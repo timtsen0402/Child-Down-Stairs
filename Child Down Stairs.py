@@ -1,4 +1,4 @@
-import pygame,math,random
+import pygame,math,random # type: ignore
 
 # initialization
 
@@ -45,7 +45,6 @@ sound_off =  (pygame.transform.scale(pygame.image.load(assets_path+"sound-off.pn
 font = pygame.font.Font(assets_path+"Olympus Mount.ttf",50)
 
 # CLASS
-
 class Tool:
     def show_text(self, textX, textY, string, color):
         text = font.render(string, True, color)
